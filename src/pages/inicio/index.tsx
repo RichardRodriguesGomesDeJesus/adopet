@@ -1,4 +1,4 @@
- export default function inicio () {
+export default function Inicio () {
     return(
         <section>
             <img src="" alt="" />
@@ -6,4 +6,4 @@
             <p>Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
         </section>
     )
- }
+}
