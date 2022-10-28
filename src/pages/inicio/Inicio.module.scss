@@ -46,6 +46,11 @@
 .links__svg {
     margin-top: 24px;
 }
+.backgroundSvg{
+    position: absolute;
+    right: 0;
+    z-index: -10;
+}
 @media screen and (min-width: 0) {
     .welcome {
         width: 248px;
@@ -68,6 +73,10 @@
     .links__svg{
         height: 312.77px;
         width: 247.34px;
+    }
+    .backgroundSvg{
+        width: 84.03px;
+        height: 417px;
     }
 }
 
@@ -95,6 +104,12 @@
         height: 422px;
         width: 338.28px;
     }
+    .backgroundSvg{
+        display: inline;
+        top: 268px;
+        width: 134.45px;
+        height: 664px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -112,5 +127,11 @@
     .links__svg{
         height: 431.63px;
         width: 346px;
+    }
+    .backgroundSvg{
+        display: inline;
+        top: 180px;
+        width: 134.45px;
+        height: 664px;
     }
 }

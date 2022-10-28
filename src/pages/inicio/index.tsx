@@ -2,6 +2,7 @@ import  Style  from './Inicio.module.scss'
 import Styles from 'styles/theme.module.scss'
 import {ReactComponent as Logo } from 'assets/Logo.svg'
 import {ReactComponent as Ilustracao } from 'assets/ilustracao.svg'
+import {ReactComponent as BackgroundSvg } from 'assets/Forma_2.svg'
 import { Link } from 'react-router-dom'
 
 export default function Inicio () {
@@ -17,6 +18,7 @@ export default function Inicio () {
                 <ul className={Style.links}>
                     <Link className={`${Style.links__btn} ${Styles.btn}`} to='/Login'>Já tenho conta</Link>
                     <Link className={`${Style.links__btn} ${Styles.btn}`} to='/Cadastro'>Quero me cadastrar</Link>
+                    <BackgroundSvg className={Style.backgroundSvg}/>
                 </ul>
                 <Ilustracao className={Style.links__svg}/>
             </section>
