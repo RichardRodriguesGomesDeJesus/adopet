@@ -1,0 +1,18 @@
+.btn{
+    align-items: center;
+    background: #FC7071;
+    border: #FC7071;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: space-around;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+}

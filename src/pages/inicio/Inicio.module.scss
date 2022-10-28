@@ -1,0 +1,116 @@
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.welcome {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .welcome__description {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+    }
+    .welcome__descriptionAlternative {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+    }
+    .welcome__titulo {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 48px;
+        margin-top: 24px;
+    }
+}
+.links{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+.links__btn{
+    height: 48px;
+}
+.links__svg {
+    margin-top: 24px;
+}
+@media screen and (min-width: 0) {
+    .welcome {
+        width: 248px;
+        .welcome__description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .welcome__descriptionAlternative {
+            display: none;
+        }
+        .welcome__logo {
+            height: 46px;
+            margin-top: 98.99px;
+            width: 186.67px;
+        }
+    }
+    .links__btn{
+        width: 180px;
+    }
+    .links__svg{
+        height: 312.77px;
+        width: 247.34px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .welcome {
+        width: 344px;
+        .welcome__description {
+            display: none;
+        }
+        .welcome__descriptionAlternative {
+            display: inline;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .welcome__logo {
+            height: 62px;
+            margin-top: 184.14px;
+            width: 251.59px;
+        }
+    }
+    .links__btn{
+        width: 344px;
+    }
+    .links__svg{
+        height: 422px;
+        width: 338.28px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .welcome {
+        width: 488px;
+        .welcome__logo {
+            height: 64px;
+            margin-top: 44px;
+            width: 259.71px;
+        }
+    }
+    .links__btn{
+        width: 362px;
+    }
+    .links__svg{
+        height: 431.63px;
+        width: 346px;
+    }
+}
