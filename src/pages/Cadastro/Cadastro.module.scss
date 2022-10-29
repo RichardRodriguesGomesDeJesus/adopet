@@ -1,0 +1,130 @@
+.presentation{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.presentation__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #3772FF;
+}
+.presentation__text___strong{
+    margin-top: 24.64px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #3772FF;
+}
+.backgroundSvg{
+    position: absolute;
+    right: 0;
+    z-index: -10;
+}
+.PawsSvg{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 0) {
+    .logo {
+        width: 142.54px;
+        height: 34.36px;
+        margin: 5.437rem 0 1.5rem 0;
+    }
+
+    .presentation__text___description {
+        font-size: 16px;
+        line-height: 21px;
+        margin: 8px 0 4px  0;
+        width: 320px;
+    }
+    .presentation__text___strong {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .backgroundSvg{
+        display: none;
+    }
+    .backgroundMobileSvg{
+        display: inline;
+        height: 415px;
+        left: 0;
+        position: absolute; 
+        top: 23rem;
+        width: 82.73px;
+        z-index: -1;
+    }
+    .PawsSvg{
+        height: 243.41px;
+        top: -17px;
+        width: 189.96px;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 251.59px;
+        height: 62px;
+        margin: 10.071rem 0 2.5rem 0 ;
+    }
+    .presentation__text___description {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 1rem 0;
+        width: 525px;
+    }
+    .presentation__text___strong {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .backgroundSvg{
+        display: inline;
+        top: 268px;
+        width: 134.45px;
+        height: 664px;
+    }
+    .backgroundMobileSvg{
+        display: none;
+    }
+    .PawsSvg{
+        height: 374.15px;
+        top: -36px;
+        width: 292px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo {
+        width: 259.71px;
+        height: 64px;
+        margin-top: 37px;
+    }
+    .presentation__text___description {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 1.5rem 0;
+    }
+    .presentation__text___strong {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .backgroundSvg{
+        display: inline;
+        top: 180px;
+        width: 134.45px;
+        height: 664px;
+    }
+    .PawsSvg{
+        height: 407.04px;
+        top: -18.19px;
+        width: 317.67px;
+    }
+}

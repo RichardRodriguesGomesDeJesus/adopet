@@ -6,7 +6,7 @@ import Style from 'components/DefaultPage/DefaultPage.module.scss'
 import { Outlet } from 'react-router-dom'
 
 
-export default function DefaultPage (props: any ){
+export default function DefaultPage (){
     return(
         <>
             <header className={Style.header}>

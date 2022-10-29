@@ -6,6 +6,8 @@ import {ReactComponent as BackgroundSvg } from 'assets/Forma_2.svg'
 import { Link } from 'react-router-dom'
 
 export default function Inicio () {
+    const body = document.querySelector('body')
+    body?.style.setProperty('--body-background-inicial', '#3772FF')
     return(
         <main className={Style.main}>
             <section className={Style.welcome}>

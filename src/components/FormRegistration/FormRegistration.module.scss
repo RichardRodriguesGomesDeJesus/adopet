@@ -1,0 +1,116 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__label {
+    color: #737380;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0 4px 0;
+}
+.form__input {
+    border: #F7F7F7;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    height: 40px;
+    text-align: center;
+    margin: 0 24px;
+}
+
+.form__input::placeholder {
+    color: #BCBCBC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.form__btn {
+    height: 40px;
+}
+.password__visibility{
+    background: url('../../assets/visibility.png') center / cover no-repeat;
+    border-radius: 0px;
+    height: 16px;
+    position: absolute;
+    width: 26px;
+}
+@media screen and (min-width: 0 ) {
+    .form__label {
+        font-size: 16px;
+        margin: 20px 0 4px 0;
+    }
+    .form__input {
+        width: 19.5rem;
+    }
+    .form__input::placeholder {
+        font-size: 12px;
+    }
+    .form__btn {
+        margin: 1.5rem 0 6.5rem 0;
+        width: 148px;
+    }
+    .password__visibility{
+        left: calc(50% + 118px);
+    }
+    #newPassword__visibility{
+        top: 530px;
+    }
+    #confirmPassword__visibility{
+        top: 620px;
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .form__label {
+        font-size: 18px;
+        margin: 1.5rem 0 .5rem 0;
+    }
+    .form__input {
+        width: 21.5rem;
+    }
+    .form__input::placeholder {
+        font-size: 14px;
+    }
+    .form__btn {
+        margin: 2.5rem 0 11.563rem 0;
+        width: 164px;
+    }
+    .password__visibility{
+        left: calc(50% + 122px);
+    }
+    #newPassword__visibility{
+        top: 710px;
+    }
+    #confirmPassword__visibility{
+        top: 807px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .form__input {
+        width: 22.625rem;
+    }
+    #name , #email {
+        width: 34.5rem;
+    }
+    .form__input::placeholder {
+        font-size: 16px;
+    }
+    .form__btn {
+        margin: 2rem 0 9.438rem 0 ;
+        width: 171px;
+    }
+    .password__visibility{
+        left: calc(50% + 123px);
+    }
+    #newPassword__visibility{
+        top: 596px;
+    }
+    #confirmPassword__visibility{
+        top: 692px;
+    }
+}
