@@ -1,7 +1,7 @@
 import DefaultPage from 'components/DefaultPage'
 import Cadastro from 'pages/Cadastro'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Inicio from 'pages/Inicio'
+import Inicio from 'pages/inicio'
 
 export default function AppRouter(){
     return(
