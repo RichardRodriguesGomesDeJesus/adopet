@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .form__label {
     color: #737380;
@@ -50,7 +49,7 @@
         font-size: 12px;
     }
     .form__btn {
-        margin: 1.5rem 0 6.5rem 0;
+        margin: 24px 0 105px 0;
         width: 148px;
     }
     .password__visibility{
@@ -76,7 +75,7 @@
         font-size: 14px;
     }
     .form__btn {
-        margin: 2.5rem 0 11.563rem 0;
+        margin: 40px 0 185px 0;
         width: 164px;
     }
     .password__visibility{
@@ -100,7 +99,7 @@
         font-size: 16px;
     }
     .form__btn {
-        margin: 2rem 0 9.438rem 0 ;
+        margin: 32px 0 151px 0 ;
         width: 171px;
     }
     .password__visibility{

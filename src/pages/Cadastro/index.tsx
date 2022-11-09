@@ -7,7 +7,7 @@ import FormRegistration from 'components/FormRegistration'
 
 export default function Cadastro(){
     const body = document.querySelector('body')
-    body?.style.setProperty('--body-background-inicial', '#E5E5E5')
+    body?.style.setProperty('--body-background-inicial', '#FFFFFF')
     return(
         <main>
             <section className={Style.presentation}>

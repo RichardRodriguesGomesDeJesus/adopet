@@ -1,0 +1,73 @@
+.presentation{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.presentation__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #3772FF;
+}
+.PawsSvg{
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+@media screen and (min-width: 0 ) {
+    .logo {
+        width: 142.54px;
+        height: 34.36px;
+        margin: 5.437rem 0 1.5rem 0;
+    }
+    .presentation__text___description {
+        font-size: 16px;
+        line-height: 21px;
+        margin: 32px 0 22px  0;
+        width: 320px;
+    }
+    .PawsSvg{
+        height: 243.41px;
+        top: -17px;
+        width: 189.96px;
+        z-index: -1;
+    }
+}
+@media screen and (min-width: 768px ) {
+    .logo {
+        width: 251.59px;
+        height: 62px;
+        margin: 10.071rem 0 2.5rem 0 ;
+    }
+    .presentation__text___description {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 20px 0;
+        width: 525px;
+    }
+    .PawsSvg{
+        height: 374.15px;
+        top: -36px;
+        width: 292px;
+    }
+}
+@media screen and (min-width: 1440px ) {
+    .logo {
+        width: 259.71px;
+        height: 64px;
+        margin-top: 37px;
+    }
+    .presentation__text___description {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 24px 0 52px 0;
+    }
+    .PawsSvg{
+        height: 407.04px;
+        top: -18.19px;
+        width: 317.67px;
+    }
+}

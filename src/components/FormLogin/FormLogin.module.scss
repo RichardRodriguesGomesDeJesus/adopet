@@ -1,0 +1,115 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__label {
+    color: #737380;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.form__input {
+    border: #F7F7F7;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    height: 40px;
+    text-align: center;
+    margin: 0 24px;
+}
+.form__input::placeholder {
+    color: #BCBCBC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.visibility {
+    color: #737380;
+    border-radius: 0px;
+    cursor: pointer;
+    position: absolute;
+}
+.btn{
+    height: 40px;
+
+}
+.mse__validity{
+    color: #FC7071;
+    display: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 8px 0 21px 0;
+}
+.form.active  .mse__validity{
+    display: block;
+}
+@media screen and (min-width: 0 ) {
+    .form__label{
+        margin: 20px 0 4px 0;
+    }
+    .form__input {
+        width: 312px;
+    }
+    .visibility {
+        left: calc( 50% + 124px);
+        top: 440px;
+    }
+    .link{
+        color: #FC7071;
+        display: block;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 8px 0 21px 0
+    }
+    .btn{
+        margin: 24px 0 247px;
+        width: 148px;
+    }
+}
+@media screen and (min-width: 768px ) {
+    .form__label{
+        margin: 20px 0 8px 0;
+    }
+    .form__input {
+        width: 344px;
+    }
+    .visibility {
+        top: 557px;
+    }
+    .link{
+        display: none;
+    }
+    .btn{
+        margin: 40px 0 434px 0;
+        width: 164px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .form__label{
+        margin: 20px 0 8px 0;
+    }
+    .form__input{
+        width: 362px;
+    }
+    .visibility {
+        left: calc(50% + 7.25rem);
+        top: 491px;
+    }
+    #email{
+        width: 552px;
+    }
+    .btn{
+        margin: 32px 0 352px 0;
+        width: 174px;
+    }
+}

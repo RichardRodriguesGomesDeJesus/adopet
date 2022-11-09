@@ -4,6 +4,7 @@ import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import { FormEvent, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 export default function FormRegistration(){
     const [name, setName]=useState('')
     const [email, setEmail]=useState('')
@@ -14,6 +15,7 @@ export default function FormRegistration(){
     const [iconPassword, setIconPassword]= useState(eyeOff)
     const [typeConfirm, setTypeConfirm]= useState('password')
     const [iconConfirm, setIconConfirm]= useState(eyeOff)
+    const navigate = useNavigate()
     const handleToggle =()=> {
         if (typePassword === 'password') {
             setIconPassword(eye)
@@ -48,10 +50,7 @@ export default function FormRegistration(){
                 })
             })
                 .then(()=>{
-                    setName('')
-                    setEmail('')
-                    setPassword('')
-                    setConfirmPassword('')
+                    navigate('/Perfil')
                 })
         } catch (error){
             console.log(error)
@@ -69,6 +68,7 @@ export default function FormRegistration(){
                 if (list.includes(email)) {
                     event.target.setCustomValidity('Este endereço de email já foi cadastrado, use outro')
                     event.target.reportValidity()
+                    console.log('a')
                     return false
                 } else {
                     event.target.setCustomValidity('')
