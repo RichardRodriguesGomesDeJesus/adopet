@@ -34,7 +34,7 @@ export default function FormRegistration(){
             setTypeConfirm('password')
         }
     }
-    //json-server -p 4000 db.json
+    //json-server --watch -p 4000 db.json
     const formSubmit = (event: FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
         try {
@@ -50,7 +50,7 @@ export default function FormRegistration(){
                 })
             })
                 .then(()=>{
-                    navigate('/Perfil')
+                    navigate('/Perfil',{state: email})
                 })
         } catch (error){
             console.log(error)

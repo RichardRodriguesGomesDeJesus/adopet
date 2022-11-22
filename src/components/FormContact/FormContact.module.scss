@@ -1,0 +1,109 @@
+.form{
+    background: #F6F6F6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction:column ;
+}
+
+.form__label{
+    color: #3772FF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.form__input{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    border: #FFFFFF;
+    color: #737380;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    height: 48px;
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+.form__input::placeholder {
+    color: #BCBCBC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form__textArea{
+    background: #FFFFFF;
+    border: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    padding: 1rem;
+}
+
+.form__textArea::placeholder {
+    color: #BCBCBC;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form__btn{
+    height: 40px;
+}
+
+@media screen and (min-width: 0 ){
+    .form{
+        padding: 30px 16px 16px;
+        width: 312px;
+    }
+    .form__input{
+        width: 280px;
+    }
+    .form__textArea{
+        height: 172px;
+    }
+    .form__btn{
+        margin: 16px auto;
+        width: 148px;
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .form{
+        padding: 30px 16px 0;
+        width: 524px;
+    }
+    .form__input{
+        width: 492px;
+    }
+    .form__textArea{
+        height: 104px;
+    }
+    .form__btn{
+        margin: 32px auto;
+        width: 164px;
+    }
+}
+
+@media screen and (min-width: 1440px ){
+    .form{
+        width: 552px;
+    }
+}

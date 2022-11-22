@@ -61,6 +61,9 @@
         left: calc( 50% + 124px);
         top: 440px;
     }
+    .form.active .visibility{
+        top: 546px;
+    }
     .link{
         color: #FC7071;
         display: block;
@@ -86,6 +89,9 @@
     .visibility {
         top: 557px;
     }
+    .form.active .visibility{
+        top: 663px;
+    }
     .link{
         display: none;
     }
@@ -104,6 +110,9 @@
     .visibility {
         left: calc(50% + 7.25rem);
         top: 491px;
+    }
+    .form.active .visibility{
+        top: 597px;
     }
     #email{
         width: 552px;

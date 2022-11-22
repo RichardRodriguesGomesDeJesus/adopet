@@ -1,0 +1,78 @@
+.card{
+    background: #f0f0f0;
+    display: flex;
+    .card__img {
+        width: 148px;
+        height: 148px;
+        margin: 24px 16px 24px 24px;
+    }
+    .card__info{
+        text-align: start;
+        .card__name{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #3772FF;
+        }
+        .card__description{
+            color: #444444;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .card__localization{
+            color: #444444;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 1.875rem;
+        }
+        .card__communication {
+            align-items: center;
+            display: flex;
+            margin-top: .5rem;
+            text-decoration: none;
+        }
+        .card__link{
+            color: #737380;
+            cursor: pointer;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        .iconCommunication {
+            cursor: pointer;
+            height: 18px;
+            width: 18px;
+        }
+    }
+    
+}
+@media screen and (min-width: 0) {
+    .card{
+        height: auto;
+        justify-content: center;
+        margin-top: 16px;
+        width: auto;
+        .card__info{
+            margin: 16px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .card{
+        width: 360px;
+        height: 196px;
+        margin: 16px 8px 0 8px;
+        .card__info{
+            margin: auto;
+        }
+    }
+}

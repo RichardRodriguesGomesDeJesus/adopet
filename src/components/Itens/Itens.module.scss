@@ -1,0 +1,28 @@
+.list {
+    display: grid;
+    align-items: center;
+}
+
+@media screen and (min-width: 0) {
+    .list {
+        margin-top: 16px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .list {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        margin: 1rem 1.5rem 2rem 1.5rem
+    }
+}
+@media screen and (min-width: 1440px) {
+    .list {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: auto;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}

@@ -2,11 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import  Style  from './FormUser.module.scss'
 import Styles from 'styles/theme.module.scss'
 import { useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+const dados = JSON.parse(localStorage.getItem('users')|| '[]') 
 export default function FormUser () {
     const [fileImg, setFileImg]= useState<File| null>()
     const [previewImg, setPreviewImg]= useState<string | null>()
     const fileInputRef = useRef<HTMLInputElement>()
     const navigate = useNavigate()
+    const { state } = useLocation()
     useEffect(()=>{
         if (fileImg) {
             const reader = new FileReader()
@@ -20,7 +23,14 @@ export default function FormUser () {
     },[fileImg])
     const formSubmit = (event: React.FormEvent<HTMLFormElement>)=>{
         event.preventDefault()
-        navigate('/')
+        const user = {
+            email: state,
+            photo: previewImg
+        }
+        dados.push(user)
+        localStorage.setItem('users', JSON.stringify(dados))
+        //localStorage.setItem(state,previewImg as string)
+        navigate('/Home')
     }
     return(
         <form className={Style.form} onSubmit={formSubmit}>

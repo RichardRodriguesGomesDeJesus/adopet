@@ -5,6 +5,94 @@
       "email": "Richard@email.com",
       "password": "Richard1",
       "id": 1
+    },
+    {
+      "name": "Fulano",
+      "email": "Fulano@email",
+      "password": "Fulano1",
+      "id": 2
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "img": "Animais_-_Dunga.png",
+      "name": "Dunga",
+      "ages": "2 anos",
+      "size": "Porte pequeno",
+      "description": "Calmo e educado",
+      "localization": "Rio de Janeiro (RJ)"
+    },
+    {
+      "id": 2,
+      "img": "Animais_-_Felícia.png",
+      "name": "Felícia",
+      "ages": "3 meses",
+      "size": "Porte pequeno",
+      "description": "Ativa e carinhosa",
+      "localization": "Nova Iguaçu (RJ)"
+    },
+    {
+      "id": 3,
+      "img": "Animais_-_Sirius.png",
+      "name": "Sirius",
+      "ages": "6 meses ",
+      "size": "Porte grande ",
+      "description": "Ativo e educado",
+      "localization": "Duque de Caxias (RJ)"
+    },
+    {
+      "id": 4,
+      "img": "Animais_-_Fiona.png",
+      "name": "Fiona",
+      "ages": "3 anos ",
+      "size": "Porte pequeno",
+      "description": "  Calma e carinhosa",
+      "localization": "São Gonçalo (RJ)"
+    },
+    {
+      "id": 5,
+      "img": "Animais_-_Sid.png",
+      "name": "8 meses ",
+      "size": "Porte médio/grande ",
+      "description": " Brincalhão e amável",
+      "localization": "Rio de Janeiro (RJ)"
+    },
+    {
+      "id": 6,
+      "img": "Animais_-_Yoda.png",
+      "name": "Yoda",
+      "ages": "1 ano ",
+      "size": "Porte médio",
+      "description": " Ativo e carinhoso",
+      "localization": "Nova Iguaçu (RJ)"
+    },
+    {
+      "id": 7,
+      "img": "Animais_-_Lua.png",
+      "name": "Lua",
+      "ages": "6 meses ",
+      "size": "Porte médio",
+      "description": " Ativa e carinhosa",
+      "localization": "Duque de Caxias (RJ)"
+    },
+    {
+      "id": 8,
+      "img": "Animais_-_Amora.png",
+      "name": "Amora",
+      "ages": "45 dias ",
+      "size": "Porte grande",
+      "description": " Calma e carinhosa",
+      "localization": "São Gonçalo (RJ)"
+    },
+    {
+      "id": 9,
+      "img": "Animais_-_Zelda.png",
+      "name": "Zelda",
+      "ages": "5 meses",
+      "size": " Porte médio",
+      "description": " Ativa e amável",
+      "localization": "Rio de Janeiro (RJ)"
     }
   ]
 }

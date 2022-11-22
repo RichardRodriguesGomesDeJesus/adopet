@@ -21,7 +21,7 @@ export default function FormLogin (){
                 const listEmails = result.map( (element: any) => element.email)
                 const listPasswords = result.map( (element: any) => element.password)
                 if (listEmails.includes(email) && listPasswords.includes(password)) {
-                    navigate('/Cadastro')
+                    navigate('/Home',{state: email})
                 } else {
                     const form = document.querySelector('form')
                     form?.classList.add(Style.active)

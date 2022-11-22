@@ -5,6 +5,7 @@ import Inicio from 'pages/inicio'
 import Perfil from 'pages/Perfil'
 import Login from 'pages/login'
 import Home from 'pages/Home'
+import Contato from 'pages/Contato'
 
 export default function AppRouter(){
     return(
@@ -16,6 +17,7 @@ export default function AppRouter(){
                     <Route path='Perfil' element={<Perfil/>} />
                     <Route path='Login' element={<Login/>}/>
                     <Route path='Home' element={<Home/>} />
+                    <Route path='Contato' element={<Contato/>}  />
                 </Route>
             </Routes>
         </Router>
