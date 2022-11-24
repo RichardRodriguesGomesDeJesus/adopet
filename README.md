@@ -1,3 +1,8 @@
+abrir a pasta src/data no vscode e 
+rodar o json server: 
+```js
+  json-server --watch -p 4000 db.json
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
