@@ -10,7 +10,6 @@ export default function FormRegistration(){
     const [email, setEmail]=useState('')
     const [password, setPassword]= useState('')
     const[confirmPassword, setConfirmPassword] = useState('')
-
     const [typePassword, setTypePassword]= useState('password')
     const [iconPassword, setIconPassword]= useState(eyeOff)
     const [typeConfirm, setTypeConfirm]= useState('password')
@@ -34,11 +33,10 @@ export default function FormRegistration(){
             setTypeConfirm('password')
         }
     }
-    //json-server --watch -p 4000 db.json
     const formSubmit = (event: FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
         try {
-            fetch('http://localhost:4000/accounts',{
+            fetch('https://api-json-server-flame.vercel.app/accounts',{
                 method: 'POST',
                 headers:{
                     'Content-type' : 'application/json'
@@ -58,7 +56,7 @@ export default function FormRegistration(){
     }
     const emailValidity =(event: React.FocusEvent<HTMLInputElement>)=>{
         event.preventDefault()
-        fetch('http://localhost:4000/accounts')
+        fetch('https://api-json-server-flame.vercel.app/accounts')
             .then((response) => response.json())
             .then((result) => {
                 const listEmail = result.map( (element: any) => element.email)

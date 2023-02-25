@@ -15,7 +15,7 @@ export default function FormLogin (){
     const navigate = useNavigate()
     const FormSubmit = (event: React.FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
-        fetch('http://localhost:4000/accounts')
+        fetch('https://api-json-server-flame.vercel.app/accounts')
             .then((response) => response.json())
             .then((result) => {
                 const listEmails = result.map( (element: any) => element.email)

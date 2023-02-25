@@ -12,7 +12,7 @@ export default function Itens() {
     }
     const [pets, setPets] = useState<IPets[]>([]) 
     useEffect(()=>{
-        fetch('http://localhost:4000/pets')
+        fetch('https://api-json-server-flame.vercel.app/pets')
             .then((response)=>response.json())
             .then((list)=>{
                 setPets(list)
